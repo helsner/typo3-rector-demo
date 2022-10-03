@@ -1,3 +1,24 @@
 [loginUser = 1]
     // Foo Bar
 [global]
+
+[globalVar = GP:L = 1]
+    // Foo Bar
+[global]
+
+[globalVar = GP:tx_myext_myplugin|bla > 0]
+    // Foo Bar
+[global]
+
+[treeLevel = 0,2]
+    // Foo Bar
+[global]
+
+[page|backend_layout = 1] || [page|uid = 42]
+    // Foo Bar
+[global]
+
+[globalVar = TSFE:beUserLogin > 0]
+    // Foo Bar
+[global]
+
