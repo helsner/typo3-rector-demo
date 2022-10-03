@@ -3,3 +3,4 @@ var
 /public/*
 .notes
 .phpunit.result.cache
+.idea

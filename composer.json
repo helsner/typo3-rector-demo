@@ -13,7 +13,11 @@
         "ssch/legacy-extension": "^1.0"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        }
     },
     "license": "MIT",
     "authors": [
@@ -31,7 +35,7 @@
     "prefer-stable": true,
     "require-dev": {
         "typo3/testing-framework": "^4.0",
-        "ssch/custom-rectors": "^1.0",
+        "rector/rector": "0.13.4",
         "symplify/easy-coding-standard": "^9.0"
     },
     "scripts": {
