@@ -18,11 +18,16 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (ContainerConfigurator $containerConfigurator): void {
     $parameters = $containerConfigurator->parameters();
 
-    $containerConfigurator->import(Typo3SetList::TYPO3_76);
-    $containerConfigurator->import(Typo3SetList::TYPO3_87);
-    $containerConfigurator->import(Typo3SetList::TYPO3_95);
+    // $containerConfigurator->import(Typo3SetList::TYPO3_76);
+    // $containerConfigurator->import(Typo3SetList::TYPO3_87);
+    // $containerConfigurator->import(Typo3SetList::TYPO3_95);
+
     // $containerConfigurator->import(Typo3SetList::TYPO3_104);
     // $containerConfigurator->import(Typo3SetList::TYPO3_11);
+
+    $containerConfigurator->import(\Rector\Set\ValueObject\SetList::CODE_QUALITY);
+    $containerConfigurator->import(\Rector\Set\ValueObject\SetList::PHP_74);
+
 
     // In order to have a better analysis from phpstan we teach it here some more things
     $parameters->set(Option::PHPSTAN_FOR_RECTOR_PATH, Typo3Option::PHPSTAN_FOR_RECTOR_PATH);
