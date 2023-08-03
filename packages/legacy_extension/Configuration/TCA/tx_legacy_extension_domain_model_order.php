@@ -391,5 +391,25 @@ return [
                 'default' => 0,
             ],
         ],
+        'this_one_is_annoying_in_v12' => [
+            'exclude' => 1,
+            'label' => 'foo',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    [
+                        'Selection 1',
+                        '1',
+                        'my-icon-identifier',
+                        'default',
+                    ],
+                    [
+                        0 => 'Selection 2',
+                        1 => '2',
+                    ],
+                ],
+            ],
+        ],
     ],
 ];

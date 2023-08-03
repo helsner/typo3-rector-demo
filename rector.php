@@ -18,12 +18,12 @@ return static function (RectorConfig $rectorConfig): void {
     // $parameters->set(Typo3Option::TYPOSCRIPT_INDENT_SIZE, 2);
 
     $rectorConfig->sets([
-        Typo3LevelSetList::UP_TO_TYPO3_11,
+        Typo3LevelSetList::UP_TO_TYPO3_12,
         \Ssch\TYPO3Rector\Set\Typo3SetList::REGISTER_ICONS_TO_ICON
     ]);
 
     // Define your target version which you want to support
-    $rectorConfig->phpVersion(PhpVersion::PHP_74);
+    $rectorConfig->phpVersion(PhpVersion::PHP_81);
 
     // If you only want to process one/some TYPO3 extension(s), you can specify its path(s) here.
     // If you use the option --config change __DIR__ to getcwd()

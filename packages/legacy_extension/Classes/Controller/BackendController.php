@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Ssch\LegacyExtension\Controller;
 
 use Ssch\LegacyExtension\Service\TranslatorInterface;
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
@@ -42,8 +43,17 @@ final class BackendController extends ActionController
 
     public function singleAction(): void
     {
-        /** @noRector  */
+        /** @noRector */
         $logManager = GeneralUtility::makeInstance('TYPO3\CMS\Core\Log\LogManager');
+
+        $pageId = 0;
+        $backPath = '';
+        $rootLine = null;
+        $section = '';
+        $viewUri = '';
+        $getVars = '';
+        $switchFocus = true;
+        $onclick = BackendUtility::viewOnClick($pageId, $backPath, $rootLine, $section, $viewUri, $getVars, $switchFocus);
 
         $pathToFile = PATH_site . 'foo/bar/baz.txt';
         $this->translator->translate('LLL:EXT:legacy_extension/Resources/Private/Language/locallang.xlf:search-text');
