@@ -12,6 +12,7 @@ return [
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
         'dividers2tabs' => true,
+        'languageField' => 'random_language',
         'delete' => 'deleted',
         'enablecolumns' => [
             'disabled' => 'hidden',
@@ -19,8 +20,7 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'company_name,company_street,company_zip,company_city,company_country,company_director_name,company_billing_email,company_branch,company_taxt_id,contact_person_name,contact_person_first_name,contact_person_last_name,contact_person_position,contact_person_email,contact_person_phone,accept_terms_of_service,contact_person_salutation,order_identifier,token',
-        'iconfile' => 'EXT:legacy_extensions/Resources/Public/Icons/tx_legacy_exntesion_domain_model_order
-        .gif',
+        'iconfile' => 'EXT:legacy_extensions/Resources/Public/Icons/tx_legacy_extension_domain_model_order.png',
     ],
     'interface' => [
         'showRecordFieldList' => 'hidden, is_test, is_gs1_gln, crdate, company_name, company_gln, company_street, company_zip, company_city, company_country, company_director_name, company_billing_email, company_branch,company_taxt_id, contact_person_name, contact_person_first_name, contact_person_last_name,contact_person_position, contact_person_email, contact_person_phone, accept_terms_of_service, contact_person_salutation, order_identifier, token, confirmation_mail_sent, registration_mail_sent',
@@ -372,6 +372,23 @@ return [
                 'range' => [
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y')),
                 ],
+            ],
+        ],
+        'random_language' => [
+            'exclude' => 1,
+            'label' => 'foo',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'special' => 'languages',
+                'items' => [
+                    [
+                        'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                        -1,
+                        'flags-multiple'
+                    ],
+                ],
+                'default' => 0,
             ],
         ],
     ],

@@ -15,8 +15,6 @@ use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  */
-
-
 final class BackendController extends ActionController
 {
     /**
@@ -37,6 +35,11 @@ final class BackendController extends ActionController
         $this->translator = $translator;
     }
 
+    public function initializeAction()
+    {
+        // some code - won't be touched
+    }
+
     public function singleAction(): void
     {
         /** @noRector  */
@@ -44,5 +47,17 @@ final class BackendController extends ActionController
 
         $pathToFile = PATH_site . 'foo/bar/baz.txt';
         $this->translator->translate('LLL:EXT:legacy_extension/Resources/Private/Language/locallang.xlf:search-text');
+    }
+
+    public function smarterThanYouAction()
+    {
+        $foo = 0;
+
+        if ($foo === 0) {
+            $this->redirect('single');
+        }
+
+        // nothing happens because rector detects different return types that cannot be migrated
+        // this changed with v12
     }
 }
