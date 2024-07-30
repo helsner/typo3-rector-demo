@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Ssch\LegacyExtension\Controller;
 
 use Ssch\LegacyExtension\Domain\Model\LegacyModelEntity;
+use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
@@ -38,6 +39,11 @@ final class PluginController extends ActionController
 
     public function fooAction(LegacyModelEntity $entity = null)
     {
+        $connectionPool = GeneralUtility::makeInstance(ConnectionPool::class);
+        $tableExists = $connectionPool->getConnectionForTable('randomtable')
+            ->getSchemaManager()
+            ->tablesExist(['randomtable']);
+
         if (is_null($entity)) {
             $GLOBALS['TSFE']->pageNotFoundAndExit('LegacyModelEntity not found.');
         }
