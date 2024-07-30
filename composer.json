@@ -34,7 +34,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "ssch/typo3-rector": "v1.3.5",
+        "ssch/typo3-rector": "v2.6.4",
         "symplify/easy-coding-standard": "^9.0"
     },
     "scripts": {
