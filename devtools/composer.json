@@ -1,0 +1,16 @@
+{
+  "name": "rector/dev-tools",
+  "description": "Rector demo Dev Tools",
+  "license": "GPLv3",
+  "require": {
+    "ssch/typo3-rector": "^v3.5.0",
+    "symplify/easy-coding-standard": "^9.0",
+    "a9f/typo3-fractor": "^0.5.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "a9f/fractor-extension-installer": true
+    }
+  }
+}

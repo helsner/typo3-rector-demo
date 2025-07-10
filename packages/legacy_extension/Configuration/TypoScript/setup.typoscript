@@ -1,0 +1,13 @@
+config.disablePageExternalUrl = 1
+config.doctypeSwitch = 1
+config.spamProtectEmailAddresses = ascii
+
+plugin.tx_felogin_login.settings.showForgotPasswordLink = 1
+page.10.data = TSFE:fileTarget
+
+
+
+# User TSConfig
+options.pageTree {
+    doktypesToShowInNewPageDragArea = 1,6,4,7,3,254,255,199
+}

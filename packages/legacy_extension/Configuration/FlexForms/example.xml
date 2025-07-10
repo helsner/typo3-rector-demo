@@ -1,0 +1,19 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <sheetTitle>Sheet Title</sheetTitle>
+                <type>array</type>
+                <el>
+                    <email_field>
+                        <config>
+                            <type>input</type>
+                            <eval>trim,email</eval>
+                            <max>255</max>
+                        </config>
+                    </email_field>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>
