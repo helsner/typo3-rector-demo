@@ -1,19 +1,20 @@
 {
-  "name": "typo3-rector-demo/dev-tools",
-  "description": "Rector demo Dev Tools",
-  "license": "GPLv3",
-  "require": {
-    "php": "^8.2.0"
-  },
-  "require-dev": {
-    "a9f/typo3-fractor": "^0.5.4",
-    "ssch/typo3-rector": "^3.6",
-    "symplify/easy-coding-standard": "^9.0"
-  },
-  "config": {
-    "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true,
-      "a9f/fractor-extension-installer": true
-    }
-  }
+	"name": "typo3-rector-demo/dev-tools",
+	"description": "Rector demo Dev Tools",
+	"license": "GPLv3",
+	"require": {
+		"php": "^8.2.0"
+	},
+	"require-dev": {
+		"a9f/fractor-composer-json": "^0.5.4",
+		"a9f/typo3-fractor": "^0.5.4",
+		"ssch/typo3-rector": "^3.6",
+		"symplify/easy-coding-standard": "^9.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"a9f/fractor-extension-installer": true
+		}
+	}
 }

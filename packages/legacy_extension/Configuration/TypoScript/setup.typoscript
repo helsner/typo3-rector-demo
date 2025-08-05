@@ -1,13 +1,11 @@
-config.disablePageExternalUrl = 1
-config.doctypeSwitch = 1
-config.spamProtectEmailAddresses = ascii
-
-plugin.tx_felogin_login.settings.showForgotPasswordLink = 1
-page.10.data = TSFE:fileTarget
-
-
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:legacy_extension/Configuration/TypoScript/myMenu.typoscript">
 
 # User TSConfig
 options.pageTree {
     doktypesToShowInNewPageDragArea = 1,6,4,7,3,254,255,199
 }
+
+// Indent condition
+[traverse(page, "uid") == 2]
+config.admPanel = 1
+[end]

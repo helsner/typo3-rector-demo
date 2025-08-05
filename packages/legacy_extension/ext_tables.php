@@ -1,8 +1,17 @@
 <?php
 
-$iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Imaging\IconRegistry::class);
-$iconRegistry->registerIcon(
-    'test-svg-migration',
-    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => 'EXT:legacy_extension/Resources/Public/icons/briefcase.svg']
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+    'legacy_extension',
+    'web',
+    'example',
+    'after:info',
+    [
+        \Ssch\LegacyExtension\Controller\BackendController::class => 'list, detail',
+    ],
+    [
+        'access' => 'admin',
+        'workspaces' => 'online',
+        'iconIdentifier' => 'module-example',
+        'labels' => 'LLL:EXT:legacy_extension/Resources/Private/Language/locallang.xlf',
+    ]
 );

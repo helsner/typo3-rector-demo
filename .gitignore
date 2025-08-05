@@ -7,3 +7,4 @@ nbproject
 /public/*
 !/public/.htaccess
 .ddev/
+/config/system/additional.php

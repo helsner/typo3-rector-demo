@@ -4,20 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3d0bfe8545e2811f9a1ecd432e12bdf",
-    "packages": [
+    "content-hash": "b89b9d7f14867ac94273be4ecdd211aa",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "a9f/fractor",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-fractor.git",
-                "reference": "7276b5c9bbcf2824a1ef0f27fe47fb1912011257"
+                "reference": "709036e5c0064e93069b9a0a92e1420cd3fec2db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-fractor/zipball/7276b5c9bbcf2824a1ef0f27fe47fb1912011257",
-                "reference": "7276b5c9bbcf2824a1ef0f27fe47fb1912011257",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-fractor/zipball/709036e5c0064e93069b9a0a92e1420cd3fec2db",
+                "reference": "709036e5c0064e93069b9a0a92e1420cd3fec2db",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +27,7 @@
                 "nette/utils": "^4.0",
                 "ondram/ci-detector": "^4.2",
                 "php": "^8.2",
-                "sebastian/diff": "^4.0 || ^5.0 || ^6.0",
+                "sebastian/diff": "^4.0 || ^5.0 || ^6.0 || ^7.0",
                 "symfony/config": "^5.4 || ^6.4 || ^7.0",
                 "symfony/console": "^5.4 || ^6.4 || ^7.0",
                 "symfony/dependency-injection": "^6.4 || ^7.0",
@@ -63,13 +64,13 @@
             "description": "File Read-Analyse-Change Tool",
             "support": {
                 "issues": "https://github.com/andreaswolf/fractor-fractor/issues",
-                "source": "https://github.com/andreaswolf/fractor-fractor/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-fractor/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-extension-installer",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-extension-installer.git",
@@ -114,27 +115,27 @@
             ],
             "description": "Installer for Fractor extensions.",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-extension-installer/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-extension-installer/tree/v0.5.5"
             },
             "time": "2025-04-30T21:48:47+00:00"
         },
         {
             "name": "a9f/fractor-fluid",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-fluid.git",
-                "reference": "e330bf2bfcd6a487414208c4267c08a970c6b8d4"
+                "reference": "7fc932d60edf436e0e79dce0b292b6b0d277b057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-fluid/zipball/e330bf2bfcd6a487414208c4267c08a970c6b8d4",
-                "reference": "e330bf2bfcd6a487414208c4267c08a970c6b8d4",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-fluid/zipball/7fc932d60edf436e0e79dce0b292b6b0d277b057",
+                "reference": "7fc932d60edf436e0e79dce0b292b6b0d277b057",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.2",
-                "a9f/fractor-extension-installer": "^0.5.2",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "nette/utils": "^4.0",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -165,27 +166,27 @@
             "description": "Fluid extension for the File Read-Analyse-Change Tool. Allows modifying Fluid files",
             "support": {
                 "issues": "https://github.com/andreaswolf/fractor-fluid/issues",
-                "source": "https://github.com/andreaswolf/fractor-fluid/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-fluid/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-htaccess",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-htaccess.git",
-                "reference": "aed9720f28473453d6368976bc6c863df8d2b4f9"
+                "reference": "9483b9996964993eb2c1f73e0842b6893be6ce2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-htaccess/zipball/aed9720f28473453d6368976bc6c863df8d2b4f9",
-                "reference": "aed9720f28473453d6368976bc6c863df8d2b4f9",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-htaccess/zipball/9483b9996964993eb2c1f73e0842b6893be6ce2c",
+                "reference": "9483b9996964993eb2c1f73e0842b6893be6ce2c",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.2",
-                "a9f/fractor-extension-installer": "^0.5.2",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "nette/utils": "^4.0",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -216,28 +217,28 @@
             ],
             "description": "htaccess extension for the File Read-Analyse-Change Tool. Allows modifying htaccess files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-htaccess/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-htaccess/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-typoscript",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-typoscript.git",
-                "reference": "84dee44bf7a0b7de742ac2baecc0e3f0e68e4af2"
+                "reference": "b198d136dbd6a37de15b559568ef6d54db5f1f85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-typoscript/zipball/84dee44bf7a0b7de742ac2baecc0e3f0e68e4af2",
-                "reference": "84dee44bf7a0b7de742ac2baecc0e3f0e68e4af2",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-typoscript/zipball/b198d136dbd6a37de15b559568ef6d54db5f1f85",
+                "reference": "b198d136dbd6a37de15b559568ef6d54db5f1f85",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.2",
-                "a9f/fractor-extension-installer": "^0.5.2",
-                "helmich/typo3-typoscript-parser": "^2.7.0",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
+                "helmich/typo3-typoscript-parser": "^2.8.0",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2",
                 "webmozart/assert": "^1.11"
@@ -266,27 +267,27 @@
             ],
             "description": "TypoScript extension for the File Read-Analyse-Change Tool. Allows modifying TYPO3 TypoScript configuration files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-typoscript/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-typoscript/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-xml",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-xml.git",
-                "reference": "cd8327e04958e2cf25239bcdc072bafe77f84e8e"
+                "reference": "0d23f988cd49b3facb5a2bb87911489634f83e93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-xml/zipball/cd8327e04958e2cf25239bcdc072bafe77f84e8e",
-                "reference": "cd8327e04958e2cf25239bcdc072bafe77f84e8e",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-xml/zipball/0d23f988cd49b3facb5a2bb87911489634f83e93",
+                "reference": "0d23f988cd49b3facb5a2bb87911489634f83e93",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.2",
-                "a9f/fractor-extension-installer": "^0.5.2",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "ext-dom": "*",
                 "ext-xml": "*",
                 "php": "^8.2",
@@ -318,27 +319,27 @@
             ],
             "description": "XML extension for the File Read-Analyse-Change Tool. Allows modifying XML files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-xml/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-xml/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-yaml",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-yaml.git",
-                "reference": "f35e4e352887b7b3911beedb2ccde9899000305f"
+                "reference": "fb556ef1449cb6c2f3e80465725f5a3a9a640554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-yaml/zipball/f35e4e352887b7b3911beedb2ccde9899000305f",
-                "reference": "f35e4e352887b7b3911beedb2ccde9899000305f",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-yaml/zipball/fb556ef1449cb6c2f3e80465725f5a3a9a640554",
+                "reference": "fb556ef1449cb6c2f3e80465725f5a3a9a640554",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.2",
-                "a9f/fractor-extension-installer": "^0.5.2",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "php": "^8.2",
                 "symfony/yaml": "^5.4 || ^6.4 || ^7.0",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -368,32 +369,32 @@
             ],
             "description": "YAML extension for the File Read-Analyse-Change Tool. Allows modifying YAML files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-yaml/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-yaml/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/typo3-fractor",
-            "version": "v0.5.2",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-typo3-fractor.git",
-                "reference": "0b76a466df9bf12810b4bdbf0985a878d02c5cde"
+                "reference": "1bb100b8b48f3e10493fcd65066cfe10672c09d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-typo3-fractor/zipball/0b76a466df9bf12810b4bdbf0985a878d02c5cde",
-                "reference": "0b76a466df9bf12810b4bdbf0985a878d02c5cde",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-typo3-fractor/zipball/1bb100b8b48f3e10493fcd65066cfe10672c09d3",
+                "reference": "1bb100b8b48f3e10493fcd65066cfe10672c09d3",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.2",
-                "a9f/fractor-extension-installer": "^0.5.2",
-                "a9f/fractor-fluid": "^0.5.2",
-                "a9f/fractor-htaccess": "^0.5.2",
-                "a9f/fractor-typoscript": "^0.5.2",
-                "a9f/fractor-xml": "^0.5.2",
-                "a9f/fractor-yaml": "^0.5.2",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
+                "a9f/fractor-fluid": "^0.5.5",
+                "a9f/fractor-htaccess": "^0.5.5",
+                "a9f/fractor-typoscript": "^0.5.5",
+                "a9f/fractor-xml": "^0.5.5",
+                "a9f/fractor-yaml": "^0.5.5",
                 "ext-dom": "*",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2"
@@ -425,9 +426,9 @@
             ],
             "description": "TYPO3 extension for the File Read-Analyse-Change Tool. Allows modifying XML files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-typo3-fractor/tree/v0.5.2"
+                "source": "https://github.com/andreaswolf/fractor-typo3-fractor/tree/v0.5.5"
             },
-            "time": "2025-07-08T20:45:55+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "helmich/typo3-typoscript-parser",
@@ -1123,29 +1124,29 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "6.0.2",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "b4ccd857127db5d41a5b676f24b51371d76d8544"
+                "reference": "7ab1ea946c012266ca32390913653d844ecd085f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/b4ccd857127db5d41a5b676f24b51371d76d8544",
-                "reference": "b4ccd857127db5d41a5b676f24b51371d76d8544",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7ab1ea946c012266ca32390913653d844ecd085f",
+                "reference": "7ab1ea946c012266ca32390913653d844ecd085f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.0",
-                "symfony/process": "^4.2 || ^5"
+                "phpunit/phpunit": "^12.0",
+                "symfony/process": "^7.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "7.0-dev"
                 }
             },
             "autoload": {
@@ -1178,7 +1179,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
                 "security": "https://github.com/sebastianbergmann/diff/security/policy",
-                "source": "https://github.com/sebastianbergmann/diff/tree/6.0.2"
+                "source": "https://github.com/sebastianbergmann/diff/tree/7.0.0"
             },
             "funding": [
                 {
@@ -1186,7 +1187,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-03T04:53:05+00:00"
+            "time": "2025-02-07T04:55:46+00:00"
         },
         {
             "name": "simonschaufi/pretty-xml",
@@ -2857,13 +2858,14 @@
             "time": "2022-06-03T18:03:27+00:00"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": "^8.2.0"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

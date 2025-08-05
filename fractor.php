@@ -22,9 +22,9 @@ use Helmich\TypoScriptParser\Parser\Printer\PrettyPrinterConfiguration;
 
 return FractorConfiguration::configure()
     ->withPaths([
-        __DIR__ . '/../packages/legacy_extension',
-        __DIR__ . '/../public/.htaccess',
-        __DIR__ . '/../composer.json',
+        __DIR__ . '/packages/legacy_extension',
+        __DIR__ . '/public/.htaccess',
+        __DIR__ . '/composer.json',
     ])
     ->withSets([
         Typo3LevelSetList::UP_TO_TYPO3_14

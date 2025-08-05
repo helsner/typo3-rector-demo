@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a59fc07d37e49dfb78994ea335511aa5",
+    "content-hash": "034dee332996997e58773f5fb71037ec",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1138,6 +1138,53 @@
             "time": "2025-03-27T12:30:47+00:00"
         },
         {
+            "name": "linawolf/list-type-migration",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/linawolf/list-type-migration.git",
+                "reference": "769f03e1134bb4f48497cb84152990075cf9f911"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/linawolf/list-type-migration/zipball/769f03e1134bb4f48497cb84152990075cf9f911",
+                "reference": "769f03e1134bb4f48497cb84152990075cf9f911",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0 || ^8.1 || ^8.2 || ^8.3",
+                "typo3/cms-install": "^11.5 || ^12.4 || ^13.4"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.43",
+                "phpstan/phpstan": "^1.8.2",
+                "typo3/coding-standards": "*"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web",
+                    "extension-key": "list_type_migration"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Linawolf\\ListTypeMigration\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "List type to CType migration, backward compatible for TYPO3 v11 and v12",
+            "support": {
+                "issues": "https://github.com/linawolf/list-type-migration/issues",
+                "source": "https://github.com/linawolf/list-type-migration/tree/1.0.0"
+            },
+            "time": "2024-10-24T07:19:06+00:00"
+        },
+        {
             "name": "lolli42/finediff",
             "version": "1.1.1",
             "source": {
@@ -2122,7 +2169,7 @@
             "dist": {
                 "type": "path",
                 "url": "./packages/legacy_extension",
-                "reference": "16d93566c207c0d64ba2a017b28949504217f639"
+                "reference": "6ffe15b51d2412b2b861751fc323255229ba83da"
             },
             "require": {
                 "typo3/cms-core": "*"
@@ -6119,64 +6166,6 @@
             "time": "2025-07-08T09:23:09+00:00"
         },
         {
-            "name": "typo3/cms-impexp",
-            "version": "v13.4.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/impexp.git",
-                "reference": "a37850d7ef68ecbfc9a31704ac33ee8776875577"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/impexp/zipball/a37850d7ef68ecbfc9a31704ac33ee8776875577",
-                "reference": "a37850d7ef68ecbfc9a31704ac33ee8776875577",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.15"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "Package": {
-                        "partOfFactoryDefault": true
-                    },
-                    "extension-key": "impexp"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Impexp\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Import/Export - Tool for importing and exporting records using XML or the custom T3D format.",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-impexp/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-07-08T09:23:09+00:00"
-        },
-        {
             "name": "typo3/cms-info",
             "version": "v13.4.15",
             "source": {
@@ -6300,64 +6289,6 @@
             "support": {
                 "chat": "https://typo3.org/help",
                 "docs": "https://docs.typo3.org",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-07-08T09:23:09+00:00"
-        },
-        {
-            "name": "typo3/cms-reactions",
-            "version": "v13.4.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/reactions.git",
-                "reference": "8b3491e96df392ce8a13936faa8efb2fbe3c6735"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/reactions/zipball/8b3491e96df392ce8a13936faa8efb2fbe3c6735",
-                "reference": "8b3491e96df392ce8a13936faa8efb2fbe3c6735",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.15"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-lowlevel": "To display registered reactions in the configuration module"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "reactions"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Reactions\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Reactions - Handle incoming Webhooks for TYPO3",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-reactions/main/en-us/",
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
@@ -6607,67 +6538,6 @@
             "time": "2025-07-08T09:23:09+00:00"
         },
         {
-            "name": "typo3/cms-sys-note",
-            "version": "v13.4.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/sys_note.git",
-                "reference": "a088dba921ab5f2df24afad7545c47bb592f131e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/sys_note/zipball/a088dba921ab5f2df24afad7545c47bb592f131e",
-                "reference": "a088dba921ab5f2df24afad7545c47bb592f131e",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.15"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-dashboard": "TYPO3 users can add widgets that can help to quickly see existing sys_note records"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "Package": {
-                        "partOfFactoryDefault": true
-                    },
-                    "extension-key": "sys_note"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\SysNote\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS System Notes - Records with messages which can be placed on any page and contain instructions or other information related to a page or section.",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-07-08T09:23:09+00:00"
-        },
-        {
             "name": "typo3/cms-tstemplate",
             "version": "v13.4.15",
             "source": {
@@ -6784,65 +6654,6 @@
             "time": "2025-07-08T09:23:09+00:00"
         },
         {
-            "name": "typo3/cms-webhooks",
-            "version": "v13.4.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/webhooks.git",
-                "reference": "9c3ffd39b629e390359983866ad81bb8f6d241f2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/webhooks/zipball/9c3ffd39b629e390359983866ad81bb8f6d241f2",
-                "reference": "9c3ffd39b629e390359983866ad81bb8f6d241f2",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/uid": "^7.2",
-                "typo3/cms-core": "13.4.15"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "typo3/cms-lowlevel": "To display registered webhooks in the configuration module"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "webhooks"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Webhooks\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Webhooks - Handle outgoing Webhooks for TYPO3",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-webhooks/main/en-us/",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-07-08T09:23:09+00:00"
-        },
-        {
             "name": "typo3/html-sanitizer",
             "version": "v2.2.0",
             "source": {
@@ -6895,16 +6706,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "4.4.0",
+            "version": "4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "7b2974c50edc88e3ef842f078cdab2e2db5177af"
+                "reference": "c551ff159ef2d35b70ee23cf3057423427bca62a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/7b2974c50edc88e3ef842f078cdab2e2db5177af",
-                "reference": "7b2974c50edc88e3ef842f078cdab2e2db5177af",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/c551ff159ef2d35b70ee23cf3057423427bca62a",
+                "reference": "c551ff159ef2d35b70ee23cf3057423427bca62a",
                 "shasum": ""
             },
             "require": {
@@ -6950,7 +6761,7 @@
                 "issues": "https://github.com/TYPO3/Fluid/issues",
                 "source": "https://github.com/TYPO3/Fluid"
             },
-            "time": "2025-07-28T15:12:48+00:00"
+            "time": "2025-08-06T10:17:20+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -7014,16 +6825,16 @@
     "packages-dev": [
         {
             "name": "a9f/fractor",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-fractor.git",
-                "reference": "739d615b6be29d2fced6a07516cb7d43ded6b22d"
+                "reference": "709036e5c0064e93069b9a0a92e1420cd3fec2db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-fractor/zipball/739d615b6be29d2fced6a07516cb7d43ded6b22d",
-                "reference": "739d615b6be29d2fced6a07516cb7d43ded6b22d",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-fractor/zipball/709036e5c0064e93069b9a0a92e1420cd3fec2db",
+                "reference": "709036e5c0064e93069b9a0a92e1420cd3fec2db",
                 "shasum": ""
             },
             "require": {
@@ -7069,13 +6880,130 @@
             "description": "File Read-Analyse-Change Tool",
             "support": {
                 "issues": "https://github.com/andreaswolf/fractor-fractor/issues",
-                "source": "https://github.com/andreaswolf/fractor-fractor/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-fractor/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
+        },
+        {
+            "name": "a9f/fractor-composer-json",
+            "version": "v0.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-composer-json.git",
+                "reference": "391774ceb8623604cd9c00ae21efc275f19272df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-composer-json/zipball/391774ceb8623604cd9c00ae21efc275f19272df",
+                "reference": "391774ceb8623604cd9c00ae21efc275f19272df",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-doc-generator": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
+                "ergebnis/json-printer": "^3.5",
+                "eta-orionis/composer-json-manipulator": "^1.0.1",
+                "nette/utils": "^4.0",
+                "php": "^8.2",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11"
+            },
+            "require-dev": {
+                "symplify/rule-doc-generator": "12.1.3"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorComposerJson\\": [
+                        "src/",
+                        "rules/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "ComposerJson extension for the File Read-Analyse-Change Tool. Allows modifying composer.json files",
+            "support": {
+                "issues": "https://github.com/andreaswolf/fractor-composer-json/issues",
+                "source": "https://github.com/andreaswolf/fractor-composer-json/tree/v0.5.5"
+            },
+            "time": "2025-08-06T12:13:21+00:00"
+        },
+        {
+            "name": "a9f/fractor-doc-generator",
+            "version": "v0.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-doc-generator.git",
+                "reference": "adc4a831bbeb61e8be1b5088c45e7f0056b53a52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-doc-generator/zipball/adc4a831bbeb61e8be1b5088c45e7f0056b53a52",
+                "reference": "adc4a831bbeb61e8be1b5088c45e7f0056b53a52",
+                "shasum": ""
+            },
+            "require": {
+                "nette/utils": "^4.0",
+                "php": "^8.2",
+                "sebastian/diff": "^4.0 || ^5.0 || ^6.0 || ^7.0",
+                "symfony/config": "^5.4 || ^6.4 || ^7.0",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0"
+            },
+            "require-dev": {
+                "symplify/rule-doc-generator": "12.1.3"
+            },
+            "bin": [
+                "bin/fractor-doc-generator"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "0.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorDocGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Generate docs for Fractor",
+            "support": {
+                "issues": "https://github.com/andreaswolf/fractor-doc-generator/issues",
+                "source": "https://github.com/andreaswolf/fractor-doc-generator/tree/v0.5.5"
+            },
+            "time": "2025-08-05T21:11:36+00:00"
         },
         {
             "name": "a9f/fractor-extension-installer",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-extension-installer.git",
@@ -7120,27 +7048,27 @@
             ],
             "description": "Installer for Fractor extensions.",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-extension-installer/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-extension-installer/tree/v0.5.5"
             },
             "time": "2025-04-30T21:48:47+00:00"
         },
         {
             "name": "a9f/fractor-fluid",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-fluid.git",
-                "reference": "7f70c2da53f4fce44045c7fdb437765d772c0d44"
+                "reference": "7fc932d60edf436e0e79dce0b292b6b0d277b057"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-fluid/zipball/7f70c2da53f4fce44045c7fdb437765d772c0d44",
-                "reference": "7f70c2da53f4fce44045c7fdb437765d772c0d44",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-fluid/zipball/7fc932d60edf436e0e79dce0b292b6b0d277b057",
+                "reference": "7fc932d60edf436e0e79dce0b292b6b0d277b057",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.4",
-                "a9f/fractor-extension-installer": "^0.5.4",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "nette/utils": "^4.0",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -7171,27 +7099,27 @@
             "description": "Fluid extension for the File Read-Analyse-Change Tool. Allows modifying Fluid files",
             "support": {
                 "issues": "https://github.com/andreaswolf/fractor-fluid/issues",
-                "source": "https://github.com/andreaswolf/fractor-fluid/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-fluid/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-htaccess",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-htaccess.git",
-                "reference": "a7b58e197766e73217c651020d82610f8d3d8376"
+                "reference": "9483b9996964993eb2c1f73e0842b6893be6ce2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-htaccess/zipball/a7b58e197766e73217c651020d82610f8d3d8376",
-                "reference": "a7b58e197766e73217c651020d82610f8d3d8376",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-htaccess/zipball/9483b9996964993eb2c1f73e0842b6893be6ce2c",
+                "reference": "9483b9996964993eb2c1f73e0842b6893be6ce2c",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.4",
-                "a9f/fractor-extension-installer": "^0.5.4",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "nette/utils": "^4.0",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -7222,27 +7150,27 @@
             ],
             "description": "htaccess extension for the File Read-Analyse-Change Tool. Allows modifying htaccess files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-htaccess/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-htaccess/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-typoscript",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-typoscript.git",
-                "reference": "3f3f7fde4f3c04bc61d1a0fbd8d7b9d16bac67c3"
+                "reference": "b198d136dbd6a37de15b559568ef6d54db5f1f85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-typoscript/zipball/3f3f7fde4f3c04bc61d1a0fbd8d7b9d16bac67c3",
-                "reference": "3f3f7fde4f3c04bc61d1a0fbd8d7b9d16bac67c3",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-typoscript/zipball/b198d136dbd6a37de15b559568ef6d54db5f1f85",
+                "reference": "b198d136dbd6a37de15b559568ef6d54db5f1f85",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.4",
-                "a9f/fractor-extension-installer": "^0.5.4",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "helmich/typo3-typoscript-parser": "^2.8.0",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -7272,27 +7200,27 @@
             ],
             "description": "TypoScript extension for the File Read-Analyse-Change Tool. Allows modifying TYPO3 TypoScript configuration files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-typoscript/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-typoscript/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-xml",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-xml.git",
-                "reference": "7fe152f5b2c616220a47997e75b8cd5552abae78"
+                "reference": "0d23f988cd49b3facb5a2bb87911489634f83e93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-xml/zipball/7fe152f5b2c616220a47997e75b8cd5552abae78",
-                "reference": "7fe152f5b2c616220a47997e75b8cd5552abae78",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-xml/zipball/0d23f988cd49b3facb5a2bb87911489634f83e93",
+                "reference": "0d23f988cd49b3facb5a2bb87911489634f83e93",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.4",
-                "a9f/fractor-extension-installer": "^0.5.4",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "ext-dom": "*",
                 "ext-xml": "*",
                 "php": "^8.2",
@@ -7324,27 +7252,27 @@
             ],
             "description": "XML extension for the File Read-Analyse-Change Tool. Allows modifying XML files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-xml/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-xml/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/fractor-yaml",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-yaml.git",
-                "reference": "80ec3379eea13814705e88cbbf88cb5bdb5feeb9"
+                "reference": "fb556ef1449cb6c2f3e80465725f5a3a9a640554"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-yaml/zipball/80ec3379eea13814705e88cbbf88cb5bdb5feeb9",
-                "reference": "80ec3379eea13814705e88cbbf88cb5bdb5feeb9",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-yaml/zipball/fb556ef1449cb6c2f3e80465725f5a3a9a640554",
+                "reference": "fb556ef1449cb6c2f3e80465725f5a3a9a640554",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.4",
-                "a9f/fractor-extension-installer": "^0.5.4",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
                 "php": "^8.2",
                 "symfony/yaml": "^5.4 || ^6.4 || ^7.0",
                 "symplify/rule-doc-generator-contracts": "^11.2",
@@ -7374,32 +7302,32 @@
             ],
             "description": "YAML extension for the File Read-Analyse-Change Tool. Allows modifying YAML files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-yaml/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-yaml/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
         },
         {
             "name": "a9f/typo3-fractor",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreaswolf/fractor-typo3-fractor.git",
-                "reference": "9a16782a856ce128fb540d00e0cddda3e3b2f4c2"
+                "reference": "1bb100b8b48f3e10493fcd65066cfe10672c09d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreaswolf/fractor-typo3-fractor/zipball/9a16782a856ce128fb540d00e0cddda3e3b2f4c2",
-                "reference": "9a16782a856ce128fb540d00e0cddda3e3b2f4c2",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-typo3-fractor/zipball/1bb100b8b48f3e10493fcd65066cfe10672c09d3",
+                "reference": "1bb100b8b48f3e10493fcd65066cfe10672c09d3",
                 "shasum": ""
             },
             "require": {
-                "a9f/fractor": "^0.5.4",
-                "a9f/fractor-extension-installer": "^0.5.4",
-                "a9f/fractor-fluid": "^0.5.4",
-                "a9f/fractor-htaccess": "^0.5.4",
-                "a9f/fractor-typoscript": "^0.5.4",
-                "a9f/fractor-xml": "^0.5.4",
-                "a9f/fractor-yaml": "^0.5.4",
+                "a9f/fractor": "^0.5.5",
+                "a9f/fractor-extension-installer": "^0.5.5",
+                "a9f/fractor-fluid": "^0.5.5",
+                "a9f/fractor-htaccess": "^0.5.5",
+                "a9f/fractor-typoscript": "^0.5.5",
+                "a9f/fractor-xml": "^0.5.5",
+                "a9f/fractor-yaml": "^0.5.5",
                 "ext-dom": "*",
                 "php": "^8.2",
                 "symplify/rule-doc-generator-contracts": "^11.2"
@@ -7431,9 +7359,110 @@
             ],
             "description": "TYPO3 extension for the File Read-Analyse-Change Tool. Allows modifying XML files",
             "support": {
-                "source": "https://github.com/andreaswolf/fractor-typo3-fractor/tree/v0.5.4"
+                "source": "https://github.com/andreaswolf/fractor-typo3-fractor/tree/v0.5.5"
             },
-            "time": "2025-08-05T21:50:30+00:00"
+            "time": "2025-08-06T12:13:21+00:00"
+        },
+        {
+            "name": "ergebnis/json-printer",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ergebnis/json-printer.git",
+                "reference": "ced41fce7854152f0e8f38793c2ffe59513cdd82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ergebnis/json-printer/zipball/ced41fce7854152f0e8f38793c2ffe59513cdd82",
+                "reference": "ced41fce7854152f0e8f38793c2ffe59513cdd82",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "require-dev": {
+                "ergebnis/data-provider": "^3.3.0",
+                "ergebnis/license": "^2.5.0",
+                "ergebnis/php-cs-fixer-config": "^6.37.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.16.1",
+                "fakerphp/faker": "^1.24.0",
+                "infection/infection": "~0.26.6",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.10",
+                "phpstan/phpstan-deprecation-rules": "^1.2.1",
+                "phpstan/phpstan-phpunit": "^1.4.1",
+                "phpstan/phpstan-strict-rules": "^1.6.1",
+                "phpunit/phpunit": "^9.6.21",
+                "rector/rector": "^1.2.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ergebnis\\Json\\Printer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Möller",
+                    "email": "am@localheinz.com",
+                    "homepage": "https://localheinz.com"
+                }
+            ],
+            "description": "Provides a JSON printer, allowing for flexible indentation.",
+            "homepage": "https://github.com/ergebnis/json-printer",
+            "keywords": [
+                "formatter",
+                "json",
+                "printer"
+            ],
+            "support": {
+                "issues": "https://github.com/ergebnis/json-printer/issues",
+                "security": "https://github.com/ergebnis/json-printer/blob/main/.github/SECURITY.md",
+                "source": "https://github.com/ergebnis/json-printer"
+            },
+            "time": "2024-11-17T11:20:51+00:00"
+        },
+        {
+            "name": "eta-orionis/composer-json-manipulator",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eta-orionis/composer-json-manipulator.git",
+                "reference": "899fdad7067be2f4d01494acbebc3f00d65cd22b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eta-orionis/composer-json-manipulator/zipball/899fdad7067be2f4d01494acbebc3f00d65cd22b",
+                "reference": "899fdad7067be2f4d01494acbebc3f00d65cd22b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EtaOrionis\\ComposerJsonManipulator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Package to load, merge and save composer.json file(s). Cleaned up from symplify/composer-json-manipulator",
+            "support": {
+                "source": "https://github.com/eta-orionis/composer-json-manipulator/tree/1.0.1"
+            },
+            "time": "2023-04-07T18:09:23+00:00"
         },
         {
             "name": "helmich/typo3-typoscript-parser",
@@ -8018,29 +8047,29 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "6.0.2",
+            "version": "7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "b4ccd857127db5d41a5b676f24b51371d76d8544"
+                "reference": "7ab1ea946c012266ca32390913653d844ecd085f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/b4ccd857127db5d41a5b676f24b51371d76d8544",
-                "reference": "b4ccd857127db5d41a5b676f24b51371d76d8544",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7ab1ea946c012266ca32390913653d844ecd085f",
+                "reference": "7ab1ea946c012266ca32390913653d844ecd085f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.2"
+                "php": ">=8.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.0",
-                "symfony/process": "^4.2 || ^5"
+                "phpunit/phpunit": "^12.0",
+                "symfony/process": "^7.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "7.0-dev"
                 }
             },
             "autoload": {
@@ -8073,7 +8102,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
                 "security": "https://github.com/sebastianbergmann/diff/security/policy",
-                "source": "https://github.com/sebastianbergmann/diff/tree/6.0.2"
+                "source": "https://github.com/sebastianbergmann/diff/tree/7.0.0"
             },
             "funding": [
                 {
@@ -8081,7 +8110,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-07-03T04:53:05+00:00"
+            "time": "2025-02-07T04:55:46+00:00"
         },
         {
             "name": "simonschaufi/pretty-xml",
@@ -8203,16 +8232,16 @@
         },
         {
             "name": "ssch/typo3-rector",
-            "version": "v3.6.0",
+            "version": "v3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabbelasichon/typo3-rector.git",
-                "reference": "e113cc86722803b6926fe6970cd3568cd445e1ad"
+                "reference": "a78867aa53c332ea3c1f453c728af0ac88a086bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabbelasichon/typo3-rector/zipball/e113cc86722803b6926fe6970cd3568cd445e1ad",
-                "reference": "e113cc86722803b6926fe6970cd3568cd445e1ad",
+                "url": "https://api.github.com/repos/sabbelasichon/typo3-rector/zipball/a78867aa53c332ea3c1f453c728af0ac88a086bd",
+                "reference": "a78867aa53c332ea3c1f453c728af0ac88a086bd",
                 "shasum": ""
             },
             "require": {
@@ -8315,7 +8344,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-10T10:29:12+00:00"
+            "time": "2025-08-06T14:10:51+00:00"
         },
         {
             "name": "symfony/polyfill-php80",

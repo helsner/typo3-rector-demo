@@ -1,39 +1,36 @@
 {
-  "name": "ssch/legacy-extension",
-  "version": "1.0.0",
-  "type": "typo3-cms-extension",
-  "authors": [
-    {
-      "name": "Sebastian Schreiber",
-      "role": "Developer"
-    }
-  ],
-  "license": [
-    "GPL-2.0+"
-  ],
-  "replace": {
-    "legacy_extension": "self.version"
-  },
-  "require": {
-    "typo3/cms-core": "*"
-  },
-  "require-dev": {
-    "typo3/testing-framework": "^4.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Ssch\\LegacyExtension\\": "Classes"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Ssch\\LegacyExtension\\Tests\\": "Tests"
-    }
-  },
-  "extra": {
-    "typo3/cms": {
-      "extension-key": "legacy_extension",
-      "web-dir": ".Build/Web"
-    }
-  }
+	"name": "ssch/legacy-extension",
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "legacy_extension",
+			"web-dir": ".Build/public"
+		}
+	},
+	"type": "typo3-cms-extension",
+	"authors": [
+		{
+			"name": "Sebastian Schreiber",
+			"role": "Developer"
+		}
+	],
+	"license": [
+		"GPL-2.0+"
+	],
+	"require": {
+		"typo3/cms-core": "*"
+	},
+	"require-dev": {
+		"typo3/testing-framework": "^4.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Ssch\\LegacyExtension\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Ssch\\LegacyExtension\\Tests\\": "Tests"
+		}
+	},
+	"version": "1.0.0"
 }

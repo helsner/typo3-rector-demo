@@ -1,0 +1,74 @@
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = 80
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[*.php]
+indent_style = space
+indent_size = 4
+
+[*.js]
+indent_style = tab
+
+[*.{css,scss}]
+indent_size = 4
+indent_style = tab
+
+[*.svg]
+
+[*.html]
+indent_style = tab
+
+[*.xml]
+indent_style = tab
+
+[*.json]
+indent_style = tab
+
+[*.rst]
+indent_size = 3
+
+[*.sh]
+indent_style = tab
+
+# package.json
+[package.json]
+indent_size = 4
+indent_style = space
+
+# composer.json
+[composer.json]
+indent_size = 4
+indent_style = tab
+insert_final_newline = false
+
+# TypoScript
+[*.{typoscript,tsconfig}]
+indent_size = 4
+indent_style = tab
+
+# XLF-Files
+[*.xlf]
+indent_style = tab
+
+# SQL-Files
+[*.sql]
+indent_style = tab
+indent_size = 2
+
+# .htaccess
+[{_.htaccess,.htaccess}]
+indent_style = tab

@@ -74,19 +74,6 @@ final class BackendController extends ActionController
         $stringWithAppendedHash = $hashService->appendHmac('123');
         $validatedStringWithHashRemoved = $hashService->validateAndStripHmac($stringWithAppendedHash);
 
-
         $getMergedWithPost = GeneralUtility::_GPmerged('tx_scheduler');
-    }
-
-    public function smarterThanYouAction()
-    {
-        $foo = 0;
-
-        if ($foo === 0) {
-            $this->redirect('single');
-        }
-
-        // nothing happens because rector detects different return types that cannot be migrated
-        // this changed with v12
     }
 }

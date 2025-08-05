@@ -1,16 +1,11 @@
 <?php
-if (!defined('TYPO3_MODE')) {
-    die('Access denied.');
-}
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:legacy_extensions/Resources/Private/Language/locallang_db.xlf:tx_legacy_exntesion_domain_model_order
-        ',
+        'title' => 'LLL:EXT:legacy_extensions/Resources/Private/Language/locallang_db.xlf:tx_legacy_exntesion_domain_model_order',
         'label' => 'order_identifier',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'dividers2tabs' => true,
         'languageField' => 'random_language',
         'delete' => 'deleted',
@@ -21,9 +16,6 @@ return [
         ],
         'searchFields' => 'company_name,company_street,company_zip,company_city,company_country,company_director_name,company_billing_email,company_branch,company_taxt_id,contact_person_name,contact_person_first_name,contact_person_last_name,contact_person_position,contact_person_email,contact_person_phone,accept_terms_of_service,contact_person_salutation,order_identifier,token',
         'iconfile' => 'EXT:legacy_extensions/Resources/Public/Icons/tx_legacy_extension_domain_model_order.png',
-    ],
-    'interface' => [
-        'showRecordFieldList' => 'hidden, is_test, is_gs1_gln, crdate, company_name, company_gln, company_street, company_zip, company_city, company_country, company_director_name, company_billing_email, company_branch,company_taxt_id, contact_person_name, contact_person_first_name, contact_person_last_name,contact_person_position, contact_person_email, contact_person_phone, accept_terms_of_service, contact_person_salutation, order_identifier, token, confirmation_mail_sent, registration_mail_sent',
     ],
     'types' => [
         '1' => ['showitem' => 'hidden, is_test, is_gs1_gln, crdate, company_name, company_gln, company_street, company_zip, company_city, company_country, company_director_name, company_billing_email, company_branch,company_taxt_id, contact_person_name, contact_person_first_name, contact_person_last_name,contact_person_position, contact_person_email, contact_person_phone, accept_terms_of_service, contact_person_salutation, order_identifier, token, confirmation_mail_sent, registration_mail_sent'],
@@ -124,7 +116,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_name' => [
@@ -134,7 +127,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_street' => [
@@ -144,7 +138,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_zip' => [
@@ -154,7 +149,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_city' => [
@@ -164,7 +160,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_country' => [
@@ -174,7 +171,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_director_name' => [
@@ -184,7 +182,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_billing_email' => [
@@ -194,7 +193,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'company_branch' => [
@@ -224,7 +224,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'contact_person_first_name' => [
@@ -234,7 +235,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'contact_person_last_name' => [
@@ -244,7 +246,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'contact_person_position' => [
@@ -254,7 +257,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'contact_person_email' => [
@@ -264,7 +268,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'contact_person_phone' => [
@@ -274,7 +279,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'trim',
+                'required' => true,
             ],
         ],
         'accept_terms_of_service' => [
@@ -305,7 +311,7 @@ return [
                 ],
                 'size' => 1,
                 'maxitems' => 1,
-                'eval' => 'required',
+                'required' => true,
             ],
         ],
         'order_identifier' => [

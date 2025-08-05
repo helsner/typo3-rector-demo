@@ -25,7 +25,6 @@ final class PluginController extends ActionController
     {
         $logManager = GeneralUtility::makeInstance('TYPO3\CMS\Core\Log\LogManager');
         $this->view->assign('isLoggedIn', $this->getTypoScriptFrontendController()->loginUser);
-        $this->view->assign('inDevelopmentMode', GeneralUtility::getApplicationContext()->isDevelopment());
         $this->view->assign('language', $GLOBALS['TSFE']->sys_language_uid);
 
         $this->getTypoScriptFrontendController()->sys_page->getDomainStartPage('dd');

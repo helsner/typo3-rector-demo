@@ -12,6 +12,41 @@
                             <max>255</max>
                         </config>
                     </email_field>
+                    <selectSingleColumn>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingle</renderType>
+                            <items type="array">
+                                <numIndex index="0" type="array">
+                                    <numIndex index="0"/>
+                                    <numIndex index="1"/>
+                                </numIndex>
+                                <numIndex index="1" type="array">
+                                    <numIndex index="0">Label 1</numIndex>
+                                    <numIndex index="1">1</numIndex>
+                                </numIndex>
+                                <numIndex index="2" type="array">
+                                    <numIndex index="0">Label 2</numIndex>
+                                    <numIndex index="1">2</numIndex>
+                                </numIndex>
+                                <numIndex index="3" type="array">
+                                    <numIndex index="0">Label 3</numIndex>
+                                    <numIndex index="1">3</numIndex>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </selectSingleColumn>
+                    <a_color_field>
+                        <config>
+                            <type>input</type>
+                            <renderType>colorpicker</renderType>
+                            <required>1</required>
+                            <size>20</size>
+                            <max>1234</max>
+                            <eval>trim,null</eval>
+                            <valuePicker><items type="array"><numIndex index="0" type="array"><numIndex index="0">typo3 orange</numIndex><numIndex index="1">#FF8700</numIndex></numIndex></items></valuePicker>
+                        </config>
+                    </a_color_field>
                 </el>
             </ROOT>
         </sDEF>
