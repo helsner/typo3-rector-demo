@@ -1,11 +1,14 @@
 {
-  "name": "rector/dev-tools",
+  "name": "typo3-rector-demo/dev-tools",
   "description": "Rector demo Dev Tools",
   "license": "GPLv3",
   "require": {
-    "ssch/typo3-rector": "^v3.5.0",
-    "symplify/easy-coding-standard": "^9.0",
-    "a9f/typo3-fractor": "^0.5.2"
+    "php": "^8.2.0"
+  },
+  "require-dev": {
+    "a9f/typo3-fractor": "^0.5.4",
+    "ssch/typo3-rector": "^3.6",
+    "symplify/easy-coding-standard": "^9.0"
   },
   "config": {
     "allow-plugins": {
